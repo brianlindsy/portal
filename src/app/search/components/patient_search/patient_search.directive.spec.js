@@ -165,7 +165,6 @@
             vm.searchForPatient();
             expect(commonService.searchForPatient).not.toHaveBeenCalled();
             vm.query.dob = {};
-            console.log(vm.query.dob);
             vm.query.dob.year = mock.dob.year;
             vm.searchForPatient();
             expect(commonService.searchForPatient).not.toHaveBeenCalled();
